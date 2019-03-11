@@ -9,19 +9,24 @@ We've created a (rather ad-hoc) Cmake project to help candidates determine if th
 First, clone this repository to your computer (creating a fork of the repository is not necessary). Next, ensure that you have `cmake` and a C++ compiler installed.
 
 - If you're using Debian or Ubuntu, you likely want to run `sudo apt-get install cmake build-essential`.
-- If you're using MacOS with HomeBrew installed, you might want to run `brew install cmake`.
+- If you're using macOS with HomeBrew installed, you might want to run `brew install cmake`.
 - Otherwise, you can find installation instructions for `cmake` [here](https://cmake.org/install/).
 
 If you can run these commands, your development environment is probably ready for Stripe's C++ interview questions:
 
 ```
+# On all platforms:
 $ cmake --version
 $ git clone [the project's URL]
 $ cd [into the project]
 $ mkdir build
 $ cd build
 $ cmake ..
+
+# On Linux or macOS:
 $ make
 $ ./hello
-```
 
+# On Windows with Visual Studio installed:
+# open cpp-interview-prep.sln, build and run
+```
