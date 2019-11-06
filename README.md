@@ -41,7 +41,7 @@ $ ./hello
     ```
 - Setup the project in Visual Studio
     - Make sure you open the folder with this repository via **File > Open > Folder** menu item and Visual Studio should automatically detect and run `cmake.exe`.
-    - The output window should not show any errors once CMake completes.
+    - Double click on `CmakeLists.txt` and that should trigger a build. The output window should not show any errors once CMake completes.
     - There are more details on using CMake with Visual Studio [here](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=vs-2019#ide-integration).  
 
 - You should now be able to right click on `helloworld.cpp` in Solution Explorer and be able to `compile` and `debug`(run) the code
