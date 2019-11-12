@@ -16,7 +16,8 @@ if(Boost_FOUND)
   add_executable(boosttest src/boosttest.cpp)
 endif()
 
-find_package(CURL CONFIG REQUIRED)
+find_package(CURL REQUIRED)
+include_directories(${CURL_INCLUDE_DIRS})
 
 add_executable(hello src/helloworld.cpp)
 target_link_libraries(hello PRIVATE CURL::libcurl)
