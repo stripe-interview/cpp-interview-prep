@@ -9,7 +9,14 @@ We've created a (rather ad-hoc) CMake project to help candidates determine if th
 First, clone this repository to your computer (creating a fork of the repository is not necessary). Next, ensure that you have `cmake`, a C++ compiler and `libcurl` installed.
 
 ## Linux or macOS
-- If you're using Debian or Ubuntu, you likely want to run `sudo apt-get install cmake build-essential`.
+- If you're using Debian or Ubuntu, you likely want to run
+```
+# One command, spread over several lines...
+sudo apt-get install \
+  cmake build-essential \
+  libboost-all-dev \
+  libcurl4-openssl-dev libcurlpp-dev
+```
 - If you're using macOS with HomeBrew installed, you might want to run `brew install cmake curl`.
 
 If you can run these commands, your development environment is probably ready for Stripe's C++ interview questions:

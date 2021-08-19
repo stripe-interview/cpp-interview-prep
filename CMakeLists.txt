@@ -20,4 +20,4 @@ find_package(CURL REQUIRED)
 include_directories(${CURL_INCLUDE_DIRS})
 
 add_executable(hello src/helloworld.cpp)
-target_link_libraries(hello PRIVATE CURL::libcurl)
+target_link_libraries(hello PRIVATE ${CURL_LIBRARIES})
